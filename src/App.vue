@@ -2,37 +2,44 @@
   <v-app>
     <v-toolbar app>
       <v-toolbar-title class="headline text-uppercase">
-        <span>Vuetify</span>
-        <span class="font-weight-light">MATERIAL DESIGN</span>
+        <span>PolyGraph Media</span>
       </v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-btn
+       <v-spacer></v-spacer>
+      <!-- <v-btn
         flat
         href="https://github.com/vuetifyjs/vuetify/releases/latest"
         target="_blank"
       >
-        <span class="mr-2">Latest Release</span>
-      </v-btn>
+        <span class="mr-2">
+          <router-link to="/addUser">Add User</router-link>
+          </span>
+      </v-btn> -->
+                <router-link to="/addUser">Add User</router-link>
     </v-toolbar>
 
     <v-content>
-      <HelloWorld/>
+      <!-- <AddUser/> -->
+      <!-- <HelloWorld/> -->
+      <ProgramAdmin/>
     </v-content>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
-
+import HelloWorld from "./components/HelloWorld";
+import AddUser from "./components/AddUser";
+import ProgramAdmin from "./components/ProgramAdmin";
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
+    HelloWorld,
+    AddUser,
+    ProgramAdmin
   },
-  data () {
+  data() {
     return {
       //
-    }
+    };
   }
-}
+};
 </script>

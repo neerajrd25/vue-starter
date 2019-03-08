@@ -43,7 +43,7 @@
         </v-layout>
       </v-flex>
 
-      <v-flex
+      <!-- <v-flex
         xs12
         mb-5
       >
@@ -60,13 +60,57 @@
             {{ link.text }}
           </a>
         </v-layout>
-      </v-flex>
+      </v-flex> -->
 
       <v-flex
         xs12
         mb-5
       >
-        <h2 class="headline font-weight-bold mb-3">Ecosystem</h2>
+<v-form v-model="valid">
+    <v-container>
+      <v-layout>
+        <v-flex
+          xs12
+          md4
+        >
+          <v-text-field
+            v-model="firstname"
+            :rules="nameRules"
+            :counter="10"
+            label="First name"
+            required
+          ></v-text-field>
+        </v-flex>
+
+        <v-flex
+          xs12
+          md4
+        >
+          <v-text-field
+            v-model="lastname"
+            :rules="nameRules"
+            :counter="10"
+            label="Last name"
+            required
+          ></v-text-field>
+        </v-flex>
+
+        <v-flex
+          xs12
+          md4
+        >
+          <v-text-field
+            v-model="email"
+            :rules="emailRules"
+            label="E-mail"
+            required
+          ></v-text-field>
+        </v-flex>
+      </v-layout>
+    </v-container>
+  </v-form>
+
+        <h2 class="headline font-weight-bold mb-3">Users</h2>
 
         <v-layout justify-center>
           <a
@@ -138,6 +182,7 @@
         }
 
       ]
+      //
     })
   }
 </script>
