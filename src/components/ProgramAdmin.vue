@@ -2,16 +2,15 @@
   <v-container>
     <v-layout text-xs-left wrap>
       <v-flex mb-5 xs12>
-        <h2 class="headline font-weight-bold mb-3">Ad Campaign</h2>
+        <h2 class="headline font-weight-bold mb-3">Company</h2>
         <h4 class="headline font-weight-light mb-3">Program Administrator</h4>
       </v-flex>
+      
     </v-layout>
-<v-btn>
-    Add User
-</v-btn>
+
 
     <v-tabs v-model="tab" color="cyan" align-with-title>
-      <v-tabs-slider color="yellow"></v-tabs-slider>
+      <v-tabs-slider color="blue"></v-tabs-slider>
 
       <v-tab v-for="item in items" :key="item">{{ item }}</v-tab>
     </v-tabs>
@@ -117,7 +116,7 @@ export default {
           name: "Mary Stoy",
           email: "mary.stoy@synerzip.com",
           role: "Program Administrator",
-          client: "Polygraph Media",
+          client: "Media Tek",
           status: "InActive"
         },
         {
