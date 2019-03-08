@@ -83,7 +83,7 @@
             // ]
     
             //
-            roles: ["Super Admin  ", "Owner", "Admin", "Program Administrator"],
+            roles: ["Owner", "Admin", "Program Administrator"],
             clients: ["Google ", "Facebook"]
         })
     };
